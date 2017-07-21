@@ -72,7 +72,8 @@ class BenalohCommunity(Community):
             self.total_sum += message.payload.value
             self.total_sum %= self.modulus
 
-    def share_local(self):
+    def share_local(self,n):
+        self.my_secret_share  = (self.my_secret_share + n) % self.modulus
         meta = self.get_meta_message(u"local-share")
         messages = []
         for candidate in self.dispersy_yield_verified_candidates():
