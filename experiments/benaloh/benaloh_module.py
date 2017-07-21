@@ -44,7 +44,7 @@ class BenalohModule(CommunityExperimentModule):
 
     @experiment_callback
     def share_local(self, n):
-        self.community.share_local(n)
+        self.community.share_local(int(n))
 
     @experiment_callback
     def share_subset_sum(self):
