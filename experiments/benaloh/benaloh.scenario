@@ -7,7 +7,7 @@
 @15 reset_dispersy_statistics
 @15 annotate start-experiment
 
-@30 share_local
+@30 share_local 1
 @45 share_subset_sum
 
 @1:30 print_local_value
