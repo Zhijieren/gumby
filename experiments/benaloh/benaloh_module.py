@@ -43,8 +43,8 @@ class BenalohModule(CommunityExperimentModule):
         self.dispersy_provider.custom_community_loader = BenalohCommunityLoader(self.dispersy_provider.session_id)
 
     @experiment_callback
-    def share_local(self):
-        self.community.share_local()
+    def share_local(self, n):
+        self.community.share_local(n)
 
     @experiment_callback
     def share_subset_sum(self):
